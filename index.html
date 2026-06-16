@@ -30,7 +30,7 @@
   <meta property="og:site_name" content="MOYO Health">
 
   <!-- Replace with your logo image -->
-  <meta property="og:image" content="https://moyo-health.vercel.app/assets/images/logo.png">
+  <meta property="og:image" content="https://moyo-health.vercel.app/assets/moyo-logo.png">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -1898,5 +1898,37 @@
     Chat with us
   </span>
 </a>
+<!-- MOYO LOADER -->
+<div id="moyoLoader">
+
+  <div class="moyo-loader__content">
+
+    <img
+      src="assets/moyo-logo.png"
+      alt="MOYO"
+      class="moyo-loader__logo"
+    >
+
+    <div class="moyo-loader__spinner"></div>
+
+  </div>
+
+</div>
+<script>
+
+window.addEventListener("load", () => {
+
+  const loader =
+  document.getElementById("moyoLoader");
+
+  setTimeout(() => {
+
+    loader.classList.add("hide");
+
+  }, 4000);
+
+});
+
+</script>
 </body>
 </html>
